@@ -1,0 +1,83 @@
+body {
+    background-color: #020d18;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: #12274d;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+h1 {
+    color: #f4d03f;
+    text-shadow: 0 0 15px #f4d03f;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #ff9800;
+}
+
+img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #f4d03f;
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.fun-fact {
+    background-color: #f4d03f;
+    color: #020d18;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #f4d03f;
+    transition: transform 0.3s ease;
+}
+
+.fun-fact:hover {
+    transform: scale(1.1);
+}
+
+/* Animated Stars */
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+    animation: twinkle 2s infinite;
+}
+
+.star:nth-child(1) { left: 10%; top: 20%; animation-duration: 2s; }
+.star:nth-child(2) { left: 30%; top: 50%; animation-duration: 3s; }
+.star:nth-child(3) { left: 50%; top: 70%; animation-duration: 4s; }
+.star:nth-child(4) { left: 70%; top: 30%; animation-duration: 5s; }
+.star:nth-child(5) { left: 90%; top: 60%; animation-duration: 6s; }
